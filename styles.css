@@ -253,10 +253,15 @@ input[name="carrusel"] {
     padding: 1rem;
   }
 
-  .menu-header {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
+  /* Ajustes específicos para los botones del menú en móviles */
+  .menu-header li a {
+    padding: 0.3rem 0.6rem; /* reduce tamaño del botón */
+    font-size: 0.9rem;      /* texto más pequeño */
+  }
+
+  .titulo {
+    font-size: 1.2rem;      /* reduce tamaño del título */
+    padding: 0.2rem 0.4rem; /* reduce padding */
   }
 
   .imagen-con-texto .texto-principal {

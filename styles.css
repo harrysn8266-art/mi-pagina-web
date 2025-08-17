@@ -245,59 +245,46 @@ input[name="carrusel"] {
   100%  { transform: translateX(0%); }
 }
 
-/* Ajustes para pantallas pequeñas */
+/* --- AJUSTES PARA MÓVILES (SOLO PÁGINA INICIO) --- */
 @media (max-width: 768px) {
-  /* Header y logo */
-  header {
+  body.inicio header {
     flex-direction: column;
-    gap: 0.3rem; /* menos espacio entre elementos */
-    padding: 0.5rem;
+    gap: 1rem;
+    padding: 1rem;
   }
 
-  .logo-container {
-    gap: 0.2rem; /* reducir espacio entre logo y título */
-  }
-
-  .titulo {
-    font-size: 1rem;      /* título más compacto */
-    padding: 0.2rem 0.3rem;
-  }
-
-  /* Menú de navegación */
-  .menu-header {
+  body.inicio .menu-header {
     flex-direction: column;
-    gap: 0.2rem;        /* menos espacio entre botones */
-    width: 100%;         /* que no se expanda más de la pantalla */
-    padding: 0;
-    margin: 0;
+    gap: 0.5rem;
     align-items: center;
   }
 
-  .menu-header li a {
+  body.inicio .menu-header li a {
     padding: 0.25rem 0.4rem; /* botones más pequeños */
-    font-size: 0.8rem;       /* texto más pequeño */
+    font-size: 0.8rem;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 0.2rem;
-    padding: 0;
-    margin: 0;
+  body.inicio .titulo {
+    font-size: 1rem;
+    padding: 0.2rem 0.3rem;
   }
 
-  /* Texto sobre imagen principal */
-  .imagen-con-texto .texto-principal {
-    font-size: 24px;  /* reducir aún más tamaño del texto */
+  body.inicio .imagen-con-texto .texto-principal {
+    font-size: 24px;
     top: 35%;
   }
 
-  .imagen-con-texto .texto-secundario {
-    font-size: 14px;  /* texto secundario más pequeño */
+  body.inicio .imagen-con-texto .texto-secundario {
+    font-size: 14px;
     top: 50%;
   }
 
-  /* Main y secciones */
-  main {
+  body.inicio nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  body.inicio main {
     padding: 1rem;
   }
 }

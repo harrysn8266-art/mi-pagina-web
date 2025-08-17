@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres para español -->
+  <title>Inicio</title>   <!-- Título de la pestaña del navegador -->
+  <link rel="stylesheet" href="styles.css">
+   <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+
+  <!-- Encabezado fijo con logo y menú de navegación -->
+  <header>
+    <div class="logo-container">
+      <!-- Logo de la empresa -->
+      <img src="imagenes/logo.png" class="logo-icon" alt="Logo M&D">
+      <!-- Título con nombre de la empresa y resaltado -->
+     <!-- Título como botón -->
+  <a href="index.html" class="titulo">
+    El Araguaney <span class="resaltado">M&amp;D</span> 2024 C.A.
+  </a>
+
+    </div>
+
+    <!-- Menú de navegación principal -->
+    <nav>
+      <ul class="menu-header">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main>
+    <h2>Bienvenido</h2>
+
+   
+  
+
+  <!-- Imagen con texto superpuesto -->
+  <div class="imagen-con-texto">
+    <img src="imagenes/nosotros.png" alt="Bienvenido">
+    <p class="texto-principal">El Araguaney M&D 2024.</p>
+    <p class="texto-secundario">Soluciones creativas e innovadoras para ti.</p>
+  </div>
+</main>
+
+  <!-- Inputs radio ocultos para controlar el carrusel -->
+  <input type="radio" name="carrusel" id="slide1" checked>
+  <input type="radio" name="carrusel" id="slide2">
+  <input type="radio" name="carrusel" id="slide3">
+  <input type="radio" name="carrusel" id="slide4">
+  <input type="radio" name="carrusel" id="slide5">
+  <input type="radio" name="carrusel" id="slide6">
+  <input type="radio" name="carrusel" id="slide7">
+
+  <!-- Sección del carrusel de imágenes -->
+  <section class="carrusel">
+    <div class="carrusel-container">
+      <div class="slides">
+        <div class="slide"><img src="imagenes/rusell1.jpeg" alt="Imagen 1"></div>
+        <div class="slide"><img src="imagenes/rusell2.jpeg" alt="Imagen 2"></div>
+        <div class="slide"><img src="imagenes/rusell3.jpeg" alt="Imagen 3"></div>
+        <div class="slide"><img src="imagenes/rusell4.jpeg" alt="Imagen 4"></div>
+        <div class="slide"><img src="imagenes/rusell5.jpeg" alt="Imagen 5"></div>
+        <div class="slide"><img src="imagenes/rusell6.jpeg" alt="Imagen 6"></div>
+        <div class="slide"><img src="imagenes/rusell7.jpeg" alt="Imagen 7"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; Proyecto universitario</p>
+  </footer>
+
+</body>
+</html>

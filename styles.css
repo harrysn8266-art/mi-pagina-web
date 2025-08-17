@@ -1,0 +1,246 @@
+
+* {
+  box-sizing: border-box;
+}
+/* Fondo general de todas las páginas */
+body {
+  background-color: #e6c5c5; /* color de fondo claro */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para secciones principales en todas las páginas */
+section, .intro-motos, .videos, .catalogo, .nosotros, .servicios .contacto {
+  background: linear-gradient(90deg, #27507c, #472828); /* degradado de fondo */
+  padding: 20px;
+  border-radius: 10px; /* bordes redondeados como header/footer */
+  margin: 20px auto;
+  max-width: 1200px; /* centra y limita ancho */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra ligera */
+  color: #fff; /* texto claro para contraste con fondo oscuro */
+}
+
+/* Estilos para el encabezado fijo */
+header {
+  background: linear-gradient(90deg, #0b1a2b, #b91c1c);
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Contenedor logo + título */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Menú de navegación alineado a la izquierda del header */
+.menu-header {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.imagen-con-texto {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imagen-con-texto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  filter: brightness(50%);
+}
+
+/* Texto principal grande */
+.imagen-con-texto .texto-principal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  width: 90%;
+  line-height: 1.2;
+  z-index: 2;
+}
+
+/* Texto secundario más pequeño debajo */
+.imagen-con-texto .texto-secundario {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  width: 80%;
+  z-index: 2;
+}
+
+/* Estilo para el icono del logo */
+.logo-icon {
+  height: 50px;
+  width: auto;
+}
+
+/* Estilo para el título dentro del header */
+.titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.titulo:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* Menú de navegación estilo horizontal */
+.menu-header li a {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-header li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #0b1a2b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Clase para resaltar texto con color rojo fuerte */
+.resaltado {
+  color: #e60000;
+}
+
+/* Estilos para navegación dentro de <nav> */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e60000;
+}
+
+/* Estilos para la sección principal */
+main {
+  padding: 2rem;
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  border-radius: 5px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  background: linear-gradient(90deg, #0b1a2b, #b91c1c);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* --- CARRUSEL DE IMÁGENES --- */
+input[name="carrusel"] {
+  display: none;
+}
+
+.carrusel {
+  max-width: 1200px;
+  height: 400px;
+  margin: 3rem auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #27507c, #472828); /* degradado en vez de blanco */
+}
+
+.carrusel-container,
+.slides,
+.slide,
+.slide img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: autoSlide 15s infinite;
+  transition: transform 0.5s ease-in-out;
+  gap: 0px;
+}
+
+.slide {
+  flex: 0 0 20%;
+  margin: 0;
+  padding: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+@keyframes autoSlide {
+  0%    { transform: translateX(0%); }
+  20%   { transform: translateX(-20%); }
+  40%   { transform: translateX(-40%); }
+  60%   { transform: translateX(-60%); }
+  80%   { transform: translateX(-80%); }
+  100%  { transform: translateX(0%); }
+}
